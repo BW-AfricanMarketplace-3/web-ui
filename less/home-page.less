@@ -1,17 +1,43 @@
 
 
+
+.pageTitle{
+  text-align: center;
+  color:white;
+  background: black;
+  // border: 2px solid orange;
+  font-size: 7rem;
+  // margin-bottom: 2px;
+}
+
+.pageTitleBtm{
+  text-align: center;
+  color:white;
+  background: red;
+  // border: 2px solid orange;
+  font-size: 7rem;
+  // margin-bottom: 2px;
+}
+
+.footer{
+  // background-color: orange;
+}
 .home {
-    .marketLogo{
+ 
+    .top{
       
+    }
+
+    .marketLogo{
       img {
-        margin: 0px 0 20px 0; /*DON'T WANT ANY MARGIN ON TOP*/
-        // height: 50px;
+        margin: 20px 0 20px 0; /*DON'T WANT ANY MARGIN ON TOP*/
         width: 100%;
-        // height: auto;
+        height: 1000px;
+        background-color: orange;
       }
-      h2{
-        margin-right: 20px;
-      }
+    //   h2{
+    //     margin-right: 20px;
+    //   }
     }
     
   
@@ -19,13 +45,21 @@
       margin: 30px 0;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
   
       // @media(max-width:499px){
       //   background-color: palegreen;
       // }
      
       .text-content {
+        h2{
+          color: white;
+          font-size: 9.8rem;
+        }
+        p{
+          // color:green;
+          font-size: 3.4rem;
+        }
         width: 48%;
         padding-right: 1%;
   
@@ -36,8 +70,8 @@
       }
   
       .img-content {
-        width: 48%;
-        padding-left: 1%;
+        width: 49%;
+        // padding-left: 1%;
         
         @media @mobile{
           width: 100%;
@@ -78,10 +112,12 @@
     }
   
     .content-pick {
+        
       padding-top: 30px;
-      // border-top: 2px dashed @navigation-border;
+      border-top: 2px solid black;      
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
+    //   margin: 0 0 0 30px;
       @media @mobile{
         .centered();
         }
