@@ -413,16 +413,6 @@ input[type=text] {
   font-display: swap;
   src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPecZTIAOhVxoMyOr9n_E7fdMPmCA.ttf) format('truetype');
 }
-.footer {
-  display: flex;
-  text-align: center;
-  height: 8vh;
-  justify-content: center;
-  align-items: center;
-}
-.footer span {
-  color: #D75645;
-}
 html {
   font-family: 'Titillium Web';
 }
@@ -433,5 +423,18 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.foter {
+  display: flex;
+  text-align: center;
+  height: 8vh;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  margin-top: 5%;
+  font-weight: bold;
+}
+.foter span {
+  color: #D75645;
 }
 /* ****** ****** */
