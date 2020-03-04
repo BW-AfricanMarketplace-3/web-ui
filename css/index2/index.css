@@ -154,7 +154,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: purple;
+  background-color: red;
 }
 h1,
 h2,
@@ -184,7 +184,6 @@ img {
 }
 .container {
   width: 100%;
-  background-color: red;
 }
 .navbar {
   background-color: black;
