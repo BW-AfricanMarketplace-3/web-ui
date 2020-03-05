@@ -286,12 +286,6 @@ img {
   background: red;
   font-size: 5rem;
 }
-.pageTitleBtm {
-  text-align: center;
-  color: white;
-  background: red;
-  font-size: 7rem;
-}
 .home {
   margin: 0 5%;
   max-width: 90%;
@@ -308,7 +302,7 @@ img {
   justify-content: space-evenly;
 }
 .home .content-section #imgAustin-Lynes {
-  border-radius: 10%;
+  border-radius: 50%;
 }
 .home .content-section #imgDavid-Betts {
   border-radius: 50%;
@@ -330,7 +324,7 @@ img {
   padding-right: 1%;
 }
 .home .content-section .text-content h2 {
-  color: blue;
+  color: white;
   font-size: 5rem;
   font-family: 'Titillium Web';
 }
