@@ -1,74 +1,4 @@
-// // Navigation Styles here
-// header{
-//     // border: 1px solid black;
-//     background-color: yellow;
-//     align-items: center;
-//     display: flex;
-//     // margin-left: 3.5%;
-//     justify-content: space-around;
-//     border-bottom: 2px dashed lightgrey;
-//     // align-items: center;
-//     // max-width: 50%;
-//     div{
-//         display: flex;
-//         justify-content: center;
-//         background-color: red;
-// }
-
-// nav{
-//     padding: 2.5% 0;
-//     width: 40%;
-//     display: flex;
-//     justify-content: space-around;
-    
-    
-//     // padding-left: 1em;
-    
-//     a{
-//         font-size: 1.5rem;
-//         color: blue;
-//         text-decoration: none;
-//         width: 25%;
-//         justify-content: space-evenly;
-
-                            
-            
-//     } 
-// }
-
-// }
-
-
-// header {
-//     background-color: orange;
-// }
-
-
-
-// header{
-//     width: 800px;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin: 0% auto;
-//     // @media (max-width: 500px){
-//     //     .centered();
-//     // }
-
-//     nav{
-//         width: 250px;
-//         display: flex;
-//         justify-content: space-between;
-//         // margin-left: auto;
-//         a{
-//             // .colorMe;
-//             text-decoration: none;
-//             font-size: 1.6rem;
-//             // color: black;
-//         }
-//     }
-// }
-
+// VLAD NAV BAR START
 .navbar {
   background-color: black;
   display: flex;
@@ -109,15 +39,18 @@
   width: 30%;
 }
 .navigation a {
+  font-family: 'Titillium Web', ;
   display: block;
   padding: 1em;
   color: white;
   font-size: 1.9rem;/*Changed font size to have it match Vlads, not sure why it's different we have the same nav code*/
 }
 .navigation a:hover {
-  background: #00ace6;
+  background: @sky-blue;
 }
+// VLAD NAV BAR END
  /* *********** media queries *********** */
+//  tabletQuery
  @media all and (max-width: 990px) {
    .flex-container {
      flex-direction: column;
@@ -131,10 +64,13 @@
    }
  }
  /* ****** ****** */
- @media all and (max-width: 600px) {
+//  Phone query
+ @media all and (max-width: 500px) {
    .logo {
      margin: .25em 0;
-     align-self: center; /* align the logo to the left side of 'flex-container' */
+     align-self: center;
+     display: flex;
+     flex-direction: column; /* align the logo to the left side of 'flex-container' */
  }
    
    .navigation {
