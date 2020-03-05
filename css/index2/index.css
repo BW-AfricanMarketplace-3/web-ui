@@ -203,7 +203,6 @@ img {
 }
 .logo {
   margin: 0 0 0 0.45em;
-  background-color: black;
 }
 .logo a {
   color: #1c1816;
@@ -229,6 +228,8 @@ img {
   display: block;
   padding: 1em;
   color: white;
+  font-size: 1.9rem;
+  /*Changed font size to have it match Vlads, not sure why it's different we have the same nav code*/
 }
 .navigation a:hover {
   background: #00ace6;
@@ -308,6 +309,15 @@ img {
 }
 .home .content-section #imgDavid-Ray {
   border-radius: 50%;
+}
+.home .content-section #imgFabricio-Bezerra {
+  border-radius: 50%;
+}
+.home .content-section #imgVladyslav-Horbachenko {
+  border-radius: 50%;
+}
+.home .content-section #imgLuis-Martinez {
+  border-radius: 55%;
 }
 .home .content-section .text-content {
   width: 48%;
