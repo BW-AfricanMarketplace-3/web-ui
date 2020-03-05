@@ -3,6 +3,10 @@
   flex-direction: column;
   align-content: column;
 }
+.flexCent {
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 500px) {
   .btn {
     display: flex;
@@ -120,11 +124,6 @@ section {
 body {
   line-height: 1;
 }
-@media (max-width: 500px) {
-  body {
-    padding: 0 5%;
-  }
-}
 ol,
 ul {
   list-style: none;
@@ -154,14 +153,14 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: purple;
+  background-color: red;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Titillium Web';
 }
 h1 {
   font-size: 4rem;
@@ -178,13 +177,13 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-family: 'Titillium Web';
 }
 img {
   max-width: 100%;
 }
 .container {
   width: 100%;
-  background-color: red;
 }
 .navbar {
   background-color: black;
@@ -204,7 +203,6 @@ img {
 }
 .logo {
   margin: 0 0 0 0.45em;
-  background-color: black;
 }
 .logo a {
   color: #1c1816;
@@ -227,9 +225,12 @@ img {
   width: 30%;
 }
 .navigation a {
+  font-family: 'Titillium Web';
   display: block;
   padding: 1em;
   color: white;
+  font-size: 1.9rem;
+  /*Changed font size to have it match Vlads, not sure why it's different we have the same nav code*/
 }
 .navigation a:hover {
   background: #00ace6;
@@ -248,10 +249,12 @@ img {
   }
 }
 /* ****** ****** */
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .logo {
     margin: 0.25em 0;
     align-self: center;
+    display: flex;
+    flex-direction: column;
     /* align the logo to the left side of 'flex-container' */
   }
   .navigation {
@@ -269,7 +272,6 @@ img {
 }
 .footer {
   width: 100%;
-  border-top: 2px solid black;
   background: black;
 }
 .footer p {
@@ -281,14 +283,12 @@ img {
 .pageTitle {
   text-align: center;
   color: white;
-  background: black;
-  font-size: 7rem;
-}
-.pageTitleBtm {
-  text-align: center;
-  color: white;
   background: red;
-  font-size: 7rem;
+  font-size: 5rem;
+}
+.home {
+  margin: 0 5%;
+  max-width: 90%;
 }
 .home .marketLogo img {
   margin: 20px 0 20px 0;
@@ -296,7 +296,7 @@ img {
   width: 100%;
 }
 .home .content-section {
-  margin-top: 3%;
+  margin: 3% 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -310,13 +310,23 @@ img {
 .home .content-section #imgDavid-Ray {
   border-radius: 50%;
 }
+.home .content-section #imgFabricio-Bezerra {
+  border-radius: 50%;
+}
+.home .content-section #imgVladyslav-Horbachenko {
+  border-radius: 50%;
+}
+.home .content-section #imgLuis-Martinez {
+  border-radius: 55%;
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
 .home .content-section .text-content h2 {
   color: white;
-  font-size: 9.8rem;
+  font-size: 5rem;
+  font-family: 'Titillium Web';
 }
 .home .content-section .text-content p {
   font-size: 3.4rem;
@@ -355,9 +365,6 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-destination {
-    display: flex;
-    flex-direction: column;
-    align-content: column;
     width: 100%;
   }
 }
@@ -369,19 +376,10 @@ img {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
-  .home .content-pick {
-    display: flex;
-    flex-direction: column;
-    align-content: column;
-  }
-}
-.home .content-pick .destination {
-  width: 30%;
-  margin-bottom: 30px;
-}
-@media (max-width: 500px) {
-  .home .content-pick .destination {
-    width: 100%;
-  }
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPecZTIAOhVxoMyOr9n_E7fdMPmCA.ttf) format('truetype');
 }
